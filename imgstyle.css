@@ -1,0 +1,315 @@
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+}
+t {
+	color: rgba(173,1,1,1.00);
+}
+/*fonts*/
+@font-face {
+	src: url(fonts/Comfortaa-Regular.ttf);
+	font-family: "comfort";
+}
+@font-face {
+	src: url(fonts/Nilland.ttf);
+	font-family: "nilland";
+}
+@font-face {
+	src: url(fonts/Evolution.ttf);
+	font-family: "evolution";
+}
+@font-face {
+	src: url(fonts/RobotoMono-Light.ttf);
+	font-family: "robomono";
+}/*R: 173 G: 1 B: 1*/
+@font-face {
+	src: url(fonts/Bellerose.ttf);
+	font-family: "br";
+}
+@font-face {
+	src: url(fonts/GeosansLight.ttf);
+	font-family: "gs";
+}/*R: 173 G: 1 B: 1*/
+/*header*/
+header {
+	width: 100%;
+	height: 10vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-image: url(images/head.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.logo {
+	height: 80%;
+	flex-basis: 5%;
+	background-color: rgba(173,1,1,1.00);
+}
+.logo a {
+	display: block;
+	width: 100%;
+	color: white;
+	height: 100%;
+	font-family: "gs";
+	font-size: 30px;
+	padding-top: 13px;
+	text-align: center;
+}
+.headtxt {
+	text-align: center;
+	flex-basis: 55%;
+	color: white;
+	font-family: "gs";
+	font-size: 30px;
+}
+.social {
+	height: 60%;
+	flex-basis: 25%;
+	display: flex;
+	justify-content: space-around;
+}
+.panel {
+	flex-basis: 12%;
+	height: 90%;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.panel a {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+#p1 {
+	background-image: url(images/fb.png);
+}
+#p2 {
+	background-image: url(images/in.png);
+}
+#p3 {
+	background-image: url(images/li.png);
+}
+#p4 {
+	background-image: url(images/wa.png);
+}
+#p5 {
+	background-image: url(images/yt.png);
+}
+/*content*/
+
+.content {
+	width: 100%;
+	height: 95vh;
+	display: flex;
+	background-image: url(images/ss.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-bottom: dashed rgba(173,1,1,1.00);
+}
+.canva {
+	flex-basis: 45%;
+	height: 90vh;
+}
+.canva canvas {
+	width: 100%;
+	height: 49%;
+	border: 2px dashed rgba(148,81,16,1.00);
+	background-image: url(images/white2.jpg);
+}
+.buttons {
+	display: flex;
+	flex-basis: 55%;
+	height: 90vh;
+	flex-direction: column;
+}
+.buttons div {
+	display: flex;
+	width: 100%;
+	height: 18%;
+	align-items: center;
+	justify-content: space-around;
+}
+.filterbutton {
+	flex-basis: 20%;
+	height: 40%;
+	font-family: "gs";
+	font-size: 25px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.numin {
+	height: 20%;
+	width: 7%;
+}
+.buttons div p, .buttonpart div p {
+	font-family: "gs";
+	font-size: 22px;
+	color: snow;
+}
+#imginput, #imginput2, #imginput3 {
+	width: 35%;
+	height: 20%;
+	font-size: 18px;
+	font-family: "gs";
+	background-color: sandybrown;
+	color: azure;
+}
+.content2 {
+	width: 100%;
+	height: 150vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-image: url(images/ss.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.instructions {
+	width: 100%;
+	height: 45vh;
+}
+.filterpart {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+}
+.imgpart {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+}
+.buttonpart {
+	height: 100%;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+#inputimg {
+	width: 99%;
+	height: 49%;
+	display: flex;
+	justify-content: space-around;
+}
+#foreinp, #backinp {
+	height: 100%;
+	width: 49%;
+	background-color: beige;
+	background-image: url(images/white2.jpg);
+	border: 2px dashed rgba(148,81,16,1.00);
+}
+#finalout {
+	width: 99%;
+	background-image: url(images/white2.jpg);
+	border: 2px dashed rgba(148,81,16,1.00);
+	height: 49%;
+	background-color: aquamarine;
+}
+.buttonpart div {
+	height: 16%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+#red2, #green2, #blue2 {
+	width: 8%;
+	height: 25%;
+}
+ol {
+	padding-left: 30px;
+	padding-top: 40px;
+	font-size: 35px;
+	line-height: 50px;
+	color: azure;
+	font-family: "gs";
+}
+#messyone {
+	width: 70%;
+	justify-content: space-around;
+}
+
+@media only screen and (max-width:1030px) {
+header {
+	height: 5vh;
+}
+	
+.logo {
+	height: 60%;
+}
+.logo a {
+	font-size: 10px;
+	padding-top: 5px;
+}
+.headtxt {
+	flex-basis: 40%;
+	font-size: 10px;
+}
+.social {
+	flex-basis: 40%;
+}
+.content {
+	flex-direction: column;
+	height: 100vh;
+}
+.canva {
+	flex-basis: 45%;
+	height: 60vh;
+}
+.canva canvas {
+	width: 99%;
+	height: 49%;
+}
+.buttons div {
+	height: 15%;
+}
+.filterbutton {
+	flex-basis: 15%;
+	height: 45%;
+	font-size: 10px;
+}
+.numin {
+	height: 20%;
+	width: 5%;
+	font-size: 8px;
+}
+.buttons div p, .buttonpart div p {
+	font-size: 13px;
+}
+#imginput, #imginput2, #imginput3 {
+	font-size: 8px;
+}
+
+ol {
+	padding-left: 15px;
+	padding-top: 20px;
+	font-size: 17px;
+	line-height: 16px;
+}
+.filterpart {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+.imgpart {
+	width: 99%;
+}
+.buttonpart {
+	width: 100%;
+}
+.buttonpart div p {
+	flex-basis: 50%;
+}
+#messyone {
+	width: 50%;
+	margin-left: 8%;
+}
+}

@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+<title>image filters</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<link rel="stylesheet" href="imgstyle.css">
+</head>
+
+<body>
+<header>
+  <div class="logo"><a href="http://eddr6.herokuapp.com">EdD</a> </div>
+  <p  class="headtxt">
+    <t>|</t>
+    Image filters by ADITYA JAIN using pure Javascript
+    <t>|</t>
+  </p>
+  <div class="social">
+    <div id="p1" class="panel"><a href="https://www.facebook.com/EddR6"></a></div>
+    <div id="p2" class="panel"><a href="https://www.instagram.com/edd_jain/"></a></div>
+    <div id="p3" class="panel"><a href="https://www.linkedin.com/in/aditya-jain-67714a129/"></a></div>
+    <div id="p4" class="panel"><a href="http://eddr6.herokuapp.com/contact"></a></div>
+    <div id="p5" class="panel"><a href="https://www.youtube.com/channel/UCgSWb0fKkMprXynFXpwc_yw?view_as=subscriber"></a></div>
+  </div>
+</header>
+<section class="content">
+  <div class="canva">
+    <canvas id="imgcanvas"></canvas>
+    <canvas id="imgout"></canvas>
+  </div>
+  <div class="buttons">
+    <div>
+      <input id="imginput" type="file" accept="image/*" multiple="false" onChange="drawcanvas()">
+      <p>
+        <t>|</t>
+        Choose the image you wanna apply filter upon. Download image using Right click--save as.
+        <t>|</t>
+      </p>
+    </div>
+    <div>
+      <input class="filterbutton" type="button" value="Greyscale" onClick="grey()">
+      <p>
+        <t>|</t>
+        Desaturates the image(black and white)
+        <t>|</t>
+      </p>
+    </div>
+    <div>
+      <p>Red</p>
+      <input class="numin" id="red" value="0" type="number">
+      <p>Green</p>
+      <input class="numin" id="green" value="0" type="number">
+      <p>Blue</p>
+      <input class="numin" id="blue" value="0" type="number">
+      <input class="filterbutton" type="button" value="Apply! Tint" onClick="rgbtint()">
+      <p>
+        <t>|</t>
+        Enter RGB value of the color of the tint
+        <t>|</t>
+      </p>
+    </div>
+    <div>
+      <input class="filterbutton" type="button" value="Rainbow Tint" onClick="rainbow()">
+      <p>
+        <t>|</t>
+        Applies Rainbow filter
+        <t>|</t>
+      </p>
+    </div>
+    <div>
+      <input class="filterbutton" type="button" value="Reset Output Image" onClick="reset()">
+      <p>
+        <t>|</t>
+        Resets the output window
+        <t>|</t>
+      </p>
+    </div>
+  </div>
+  
+  <!--
+	
+<canvas id="can3"></canvas>
+	  --> 
+</section>
+<section class="content2">
+  <div class="instructions">
+	<ol type="1">Change your solid color background with a better one--
+	  <li>Make sure your foreground image has a background as a white solid, light green(any shade) solid or a light blue(any shade) solid,try not to have the background color on the subject of the image.</li>
+	  <li>Get the RGB value of your background color from <a href="https://imagecolorpicker.com/">image color picker here!</a></li>
+	  <li>Enter the aquired RGB value in the RGB field below and click the respective button. Right click--save as to download the image</li></ol>
+	</div>
+  <div class="filterpart">
+    <div class="imgpart">
+      <div id="inputimg">
+        <canvas id="foreinp"></canvas>
+        <canvas id="backinp"></canvas>
+      </div>
+      <canvas id="finalout"></canvas>
+    </div>
+    <div class="buttonpart">
+      <div>
+        <input id="imginput2" type="file" accept="image/*" multiple="false" onChange="draw1()">
+		  <p>Choose Foreground image having a uniform solid shade of white,light green or light blue</p>
+      </div>
+      <div>
+        <input id="imginput3" type="file" accept="image/*" multiple="false" onChange="draw2()">
+		  <p>Choose image with the Background to replace with in the above image</p>
+      </div>
+      <div id="messyone">
+        <p>Red </p><input id="red2" value="0" type="number">
+        <p>Green </p><input id="green2" value="0" type="number">
+        <p>Blue </p><input id="blue2" value="0" type="number">
+      </div>
+      <div>
+        <input class="filterbutton" type="button" value="White background" onClick="forebackwhite()">
+		  <p>Click this if the background to replace is a shade of white</p>
+      </div>
+      <div>
+        <input class="filterbutton" type="button" value="Green background" onClick="forebackgreen()">
+		  <p>Click this if the background to replace is a shade of light green</p>
+      </div>
+      <div>
+        <input class="filterbutton" type="button" value="Blue Output Image" onClick="forebackblue()">
+		  <p>Click this if the background to replace is a shade of light blue</p>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+<script type="text/javascript" src="SimpleImage.js"></script>
+<script src="image.js"></script>
+</html>
